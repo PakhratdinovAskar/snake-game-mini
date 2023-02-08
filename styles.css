@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+}
+
+.displayGame{
+  background: green;
+  height: 70vh;
+  position: relative;
+
+}
+
+.buttonGame{
+  background: red;
+  height: 30vh; 
+  display: grid; 
+
+  grid-template-areas:
+  "A A A A"
+  "B B C C"
+  "D D D D";
+}
+
+#button1{
+  grid-area: A;
+}
+
+#button2{
+  grid-area: B;
+}
+
+#button3{
+  grid-area: C;
+}
+
+#button4{
+  grid-area: D;
+}
+
+.component{
+  width: 10px;
+  height: 10px;
+  background-color: darkgray;
+  position: absolute;
+  /* transition: top 0.5s ease-in-out 0.5s, left 0.5s ease-in-out 0.5s; */
+}
+
+#component1{
+  top: 200px;
+  left: 20px;
+}
+
+#component2{
+  top: 200px;
+  left: 10px;
+}
+
+#component3{
+  top: 200px;
+  left: 0px;
+}
